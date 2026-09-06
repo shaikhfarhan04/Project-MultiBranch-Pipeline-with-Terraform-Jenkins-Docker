@@ -12,6 +12,9 @@ def home():
 def health():
     return "OK"
 
+@app.route("/environment")
+def environment():
+    return "Production Environment"
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)
